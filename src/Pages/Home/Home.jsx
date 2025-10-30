@@ -33,6 +33,7 @@ export default function Home() {
             <div className="">
               <DiscriptionHome />
             </div>
+
             <BrandsSupplements />
             <div className="block sm:hidden ">
               <ArticlesSlider />
