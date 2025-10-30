@@ -1,0 +1,82 @@
+.stories-container {
+  font-family: 'IRANSans', Tahoma, sans-serif;
+  text-align: right;
+  direction: rtl;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stories-container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.stories-container .modal {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.stories-container .progress-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 4px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.stories-container .progress-wrapper {
+  flex: 1;
+  height: 3px;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.stories-container .progress-bar {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: width linear;
+}
+
+.stories-container .story-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  text-align: right;
+  direction: rtl;
+  color: #fff;
+}
+
+.stories-container .profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 2px solid #fff;
+}
+
+/* دکمه‌های ناوبری */
+.stories-container .nav-button {
+  transition: all 0.3s ease;
+}
+
+.stories-container .nav-button:hover {
+  background-color: rgba(255,255,255,0.5);
+  transform: scale(1.1);
+}

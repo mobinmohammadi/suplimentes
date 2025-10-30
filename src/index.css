@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: Dana;
+  src: url("./../public/Fonts/Dana/woff2/DanaFaNum-Medium.woff2");
+}
+
+@font-face {
+  font-family: Dana-Bold;
+  src: url("./../public/Fonts/Dana/woff2/DanaFaNum-DemiBold.woff2");
+}
+
+@font-face {
+  font-family: Morabba;
+  src: url("./../public/Fonts/Morabba/woff2/Morabba-Medium.woff2");
+}
+
+
+@font-face {
+  font-family: Morabba-Bold;
+  src: url("./../public/Fonts/Morabba/woff2/Morabba-Bold.woff2");
+}
+
+
+@theme{
+    --text-md : 15px ;
+    --breakpoint-x : 400px;
+    --breakpoint-xs : 468px;
+    --breakpoint-md : 548px;
+    --breakpoint-mmd : 768px;
+    --breakpoint-s : 200px;
+    --text-x : 10px;
+    --font-Dana : Dana;
+    --font-Dana-Bold : Dana-Bold;
+    --font-Morabba : Morabba;
+    --font-Morabba-Bold : Morabba-Bold;
+}
+
+body{
+  font-family: "Dana";
+}
+
+.swiper{
+  height: 100%;
+}
+
+.swiper-slide{
+  background-color:inherit!important;
+}
+
+
+/* Loader Stayles */
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    z-index: 20;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 1px solid rgb(165, 157, 157);
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }
+
+  .y-scroll-no-scrollbar {
+  overflow-y: auto; /* یا scroll */
+  scrollbar-width: none; /* برای فایرفاکس */
+  -ms-overflow-style: none; /* برای اینترنت اکسپلورر */
+}
+  
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+
+  .hiddenSearchWrapper{
+    top: 140%;
+    transition: all 0.2s ease;
+    opacity: 0;
+  }
+
+  .showSearchWrapper{
+    top: 100%;
+    transition: all 0.2s ease;
+    opacity:100%;
+
+  }
+
+  .transitions-custom{
+    transition: all 0.4s ease-in-out;
+  }
+
+
+  
+  /*  */
+
+  .styleForBoxesCateguryMobile{
+    opacity: 100;
+    transition: all 1s ease;
+    top: 37%;
+  }
+
+.style-modalOpen{
+  transition: all 0.3s ease ;
+}
+
