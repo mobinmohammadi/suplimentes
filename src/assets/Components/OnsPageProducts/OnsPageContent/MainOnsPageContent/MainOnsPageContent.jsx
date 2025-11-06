@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ShoppingCartDetailAndOtherSpecifications from "../../ShoppingCartDetailAndOtherSpecifications/ShoppingCartDetailAndOtherSpecifications";
 import NameAndCateguryNameAndMore from "../../NameAndCateguryNameAndMore/NameAndCateguryNameAndMore";
 import ShareProducts from "../../../ShareProducts/ShareProducts";
@@ -18,6 +18,7 @@ export default function MainOnsPageContent(props) {
     loaderOnPages,
     setTitleForBasket,
   } = props;
+  
   return (
     <div className="flex flex-col items-center & > *:w-full w-full sm:w-[70%] pr-4 pb-2 pl-2">
       <div className="flex flex-col gap-2 mt-5 sm:mt-0">

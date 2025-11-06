@@ -1,40 +1,53 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useZoom } from "../../../Context/ZoomContext.jsx";
+import Zoom from "react-medium-image-zoom";
 
-export default function  OnsPageSliderProduct({
+export default function OnsPageSliderProduct({
   filtredOnsProducts,
   setIsShowSliderMoreOnOneProducts,
+  isShowZoomModal,
+  setIsShowZoomModal,
 }) {
+  const {
+    openZoom,
+    closeZoom,
+    isSliderVisible,
+    setIsZoomed,
+    isZoomed,
+    showSlider,
+  } = useZoom();
+
   const { name, img, subImg } = filtredOnsProducts;
   const [[currentIndex, direction], setCurrentIndex] = useState([0, 1]);
-  const brekedSubimagesProducts = subImg.map(items => items.img);
-
+  const brekedSubimagesProducts = subImg.map((items) => items.img);
   const nextSlide = () => {
     setCurrentIndex([(currentIndex + 1) % subImg.length, 1]);
   };
+  console.log(img);
 
   const prevSlide = () => {
     setCurrentIndex([
       currentIndex === 0 ? subImg.length - 1 : currentIndex - 1,
-      -1
+      -1,
     ]);
   };
 
   const variants = {
     enter: (direction) => ({
-      x: direction > 0 ? '100%' : '-100%',
-      opacity: 0
+      x: direction > 0 ? "100%" : "-100%",
+      opacity: 0,
     }),
     center: {
       x: 0,
       opacity: 1,
-      transition: { duration: 0.3 }
+      transition: { duration: 0.3 },
     },
     exit: (direction) => ({
-      x: direction < 0 ? '100%' : '-100%',
+      x: direction < 0 ? "100%" : "-100%",
       opacity: 0,
-      transition: { duration: 0.3 }
-    })
+      transition: { duration: 0.3 },
+    }),
   };
 
   return (
@@ -49,7 +62,7 @@ export default function  OnsPageSliderProduct({
             <svg>
               <use href="#magnifying-glass-minus"></use>
             </svg>
-            <svg>
+            <svg onClick={() => setIsZoomed(true)}>
               <use href="#magnifying-glass-plus"></use>
             </svg>
           </div>
@@ -75,23 +88,34 @@ export default function  OnsPageSliderProduct({
           </div>
 
           {/* Slide content */}
-          <div className="relative w-full h-full mx-4">
-            <AnimatePresence custom={direction} mode="popLayout">
-              <motion.div
-                key={currentIndex}
-                custom={direction}
-                variants={variants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                className="absolute inset-0 bg-contain bg-no-repeat bg-center"
-                style={{
-                  backgroundImage: `url(${brekedSubimagesProducts[currentIndex]})`,
-                  backgroundSize: 'contain'
-                }}
+          {isZoomed ? (
+            <Zoom>
+              <img
+                className="cursor-pointer object-cover w-72 sm:w-[250px] rounded-sm"
+                src={brekedSubimagesProducts[currentIndex]}
+                alt=""
               />
-            </AnimatePresence>
-          </div>
+            </Zoom>
+          ) : (
+            <div className="relative w-full h-full mx-4">
+              <AnimatePresence custom={direction} mode="popLayout">
+                <motion.div
+                  key={currentIndex}
+                  custom={direction}
+                  variants={variants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  className="absolute inset-0 bg-contain bg-no-repeat bg-center"
+                  style={{
+                    backgroundImage: `url(${brekedSubimagesProducts[currentIndex]})`,
+                    backgroundSize: "contain",
+                  }}
+                />
+              </AnimatePresence>
+            </div>
+          )}
+
           {/* Prev button */}
           <div
             onClick={prevSlide}
@@ -101,9 +125,6 @@ export default function  OnsPageSliderProduct({
               <use href="#arrow-left"></use>
             </svg>
           </div>
-
-
-
         </div>
 
         {/* Product info and thumbnails */}
@@ -117,8 +138,14 @@ export default function  OnsPageSliderProduct({
                 key={index}
                 src={item.img}
                 alt=""
-                className={`cursor-pointer ${currentIndex === index ? 'opacity-100' : 'opacity-70 border-4   border-blue-600 border-solid'}`}
-                onClick={() => setCurrentIndex([index, index > currentIndex ? 1 : -1])}
+                className={`cursor-pointer ${
+                  currentIndex === index
+                    ? "opacity-100"
+                    : "opacity-70 border-4   border-blue-600 border-solid"
+                }`}
+                onClick={() =>
+                  setCurrentIndex([index, index > currentIndex ? 1 : -1])
+                }
               />
             ))}
           </div>

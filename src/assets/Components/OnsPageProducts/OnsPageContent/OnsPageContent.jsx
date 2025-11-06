@@ -1,11 +1,6 @@
 import React, { memo, useContext, useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { allProducts } from "../../../../Data";
-import OnsPageSliderProduct from "../OnsPageSliderProduct/OnsPageSliderProduct";
-import ShareProducts from "../../ShareProducts/ShareProducts";
-import TasteProducts from "../TasteProducts/TasteProducts";
-import ShoppingCartDetailAndOtherSpecifications from "../ShoppingCartDetailAndOtherSpecifications/ShoppingCartDetailAndOtherSpecifications";
-import NameAndCateguryNameAndMore from "../NameAndCateguryNameAndMore/NameAndCateguryNameAndMore";
 import ImagesAndSliderForProductsSinglePages from "../ImagesAndSliderForProductsSinglePages/ImagesAndSliderForProductsSinglePages";
 import { CartContext } from "../../../Context/CartContext";
 import MainOnsPageContent from "./MainOnsPageContent/MainOnsPageContent";

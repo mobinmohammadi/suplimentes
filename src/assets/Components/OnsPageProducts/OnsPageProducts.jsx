@@ -6,8 +6,7 @@ import OnsPageContent from "./OnsPageContent/OnsPageContent";
 import SliderProducts from "../SliderProducts/SliderProducts";
 import Footer from "../Footer/Footer";
 import { allProducts } from "../../../Data";
-import { title } from "framer-motion/client";
-import MyParallaxSwiper from "../SwiperSlide/SwiperSlide";
+import { ZoomProvider } from "../../Context/ZoomContext.jsx";
 
 export default function OnsPageProducts() {
   // ================================================================
@@ -53,9 +52,11 @@ export default function OnsPageProducts() {
           titleBreadCrumb={titleBreadCrumb}
           linkCategury={linkCategury}
         />
-        <div className="">
-          <OnsPageContent />
-        </div>
+        <ZoomProvider >
+          <div className="">
+            <OnsPageContent />
+          </div>
+        </ZoomProvider>
         <SliderProducts title="محصولات مرتبط" />
         <Footer />
       </div>

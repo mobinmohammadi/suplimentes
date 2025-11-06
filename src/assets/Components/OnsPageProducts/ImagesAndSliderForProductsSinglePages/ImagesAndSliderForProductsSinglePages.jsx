@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import 'react-medium-image-zoom/dist/styles.css'
-import Zoom from 'react-medium-image-zoom'
-  
+import "react-medium-image-zoom/dist/styles.css";
+import Zoom from "react-medium-image-zoom";
+import { useZoom } from "../../../Context/ZoomContext.jsx";
 
 export default function ImagesAndSliderForProductsSinglePages({
   isShowPageShare,
@@ -10,11 +10,19 @@ export default function ImagesAndSliderForProductsSinglePages({
   subImg,
   srcProductStatus,
   setIsShowSliderMoreOnOneProducts,
-  filtredOnsProducts,
+  
 }) {
   function handlePageShare() {
     setIsShowPageShare(true);
   }
+  const {
+    openZoom,
+    closeZoom,
+    isSliderVisible,
+    setIsZoomed,
+    isZoomed,
+    showSlider,
+  } = useZoom();
 
   // ==============================================================
 
@@ -84,23 +92,15 @@ export default function ImagesAndSliderForProductsSinglePages({
           </div>
         </div>
         <div className="relative group overflow-hidden">
-            <img
-              ref={styleImgAfterLoaded}
-              onClick={() => setIsShowSliderMoreOnOneProducts(true)}
-              className="cursor-pointer object-cover w-72 h-3 opacity-0 invisible  sm:w-[250px] rounded-sm"
-              src={srcProductStatus}
-              alt=""
-            />
+          <img
+            ref={styleImgAfterLoaded}
+            onClick={() => {setIsShowSliderMoreOnOneProducts(true)}}
+            className="cursor-pointer object-cover w-72 h-3 opacity-0 invisible  sm:w-[250px] rounded-sm"
+            src={srcProductStatus}
+            alt=""
+          />
+         
 
-          <Zoom>
-              <img
-              ref={styleImgAfterLoaded}
-              onClick={() => setIsShowSliderMoreOnOneProducts(true)}
-              className="cursor-pointer object-cover w-72 h-3 opacity-0 invisible  sm:w-[250px] rounded-sm"
-              src={srcProductStatus}
-              alt=""
-            />
-          </Zoom>
           <span
             ref={textForZoomProduct}
             className="opacity-0 invisible absolute -z-10 bottom-full"
