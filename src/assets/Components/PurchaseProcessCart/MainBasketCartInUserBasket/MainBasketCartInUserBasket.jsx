@@ -22,7 +22,7 @@ export default function MainBasketCartInUserBasket({item}) {
           <div className="flex flex-col gap-1">
             <span className="text-xs">1٬890٬000</span>
             <div className="text-xs flex gap-0.5">
-              <span>{price.toLocaleString()}</span>
+              <span><span className="text-red-500 border-b">قیمت هر واحد :</span> {price.toLocaleString()} </span>
               <span>تومان</span>
             </div>
             <div className="flex gap-0.5 items-center text-x">

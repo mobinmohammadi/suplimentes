@@ -9,8 +9,9 @@ export const CartProvider = ({ children }) => {
     const storedCart = localStorage.getItem("cart");
     return storedCart ? JSON.parse(storedCart) : [];
   });
+  const [countProduct, setCountProduct] = useState(null);
 
-  const cartUser = useNavigate()
+  const cartUser = useNavigate();
   const [allPriceInBasket, setAllPriceInBasket] = useState(0);
 
   const saveInToLocalStorage = (cart) => {
@@ -18,7 +19,6 @@ export const CartProvider = ({ children }) => {
   };
 
   const removeInBasket = (productID) => {
-    
     setCart((prevCart) => {
       let product = prevCart.find((product) => product.id === productID);
       if (!product) return prevCart;
@@ -32,30 +32,40 @@ export const CartProvider = ({ children }) => {
       }
     });
   };
+const addToCart = (product) => {
+  const updateLocalStorage = (updatedCart) => {
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+  };
 
-  const addToCart = (product) => {
+  if (countProduct > 1) {
     const existing = cart.find((item) => item.id === product.id);
-    const currentCount = existing ? existing.count : 0;
+
     toast.promise(
       new Promise((resolve, reject) => {
         setTimeout(() => {
           try {
             setCart((prevCart) => {
-              const exist = prevCart.find((item) => item.id == product.id);
+              const exist = prevCart.find((item) => item.id === product.id);
+              let updatedCart;
+
               if (exist) {
-                return prevCart.map((item) =>
+                updatedCart = prevCart.map((item) =>
                   item.id === product.id
-                    ? { ...item, count: item.count + 1 }
+                    ? { ...item, count: item.count + Number(countProduct) }
                     : item
                 );
               } else {
-                return [...prevCart, { ...product, count: 1 }];
+                updatedCart = [...prevCart, { ...product, count: countProduct }];
               }
+
+              updateLocalStorage(updatedCart);
+              return updatedCart;
             });
+
             setTimeout(() => {
-              
-              cartUser("/cart")
+              cartUser("/cart");
             }, 2000);
+
             resolve();
           } catch (error) {
             reject();
@@ -65,12 +75,57 @@ export const CartProvider = ({ children }) => {
       {
         pending: "در حال افزودن به سبد خرید...",
         success: existing
-          ? `1 عدد دیگر اضافه شد (الان: ${currentCount + 1} عدد)`
+          ? `${countProduct} عدد دیگر اضافه شد ✅`
           : "محصول به سبد خرید اضافه شد ✅",
         error: "افزودن به سبد خرید با خطا مواجه شد ❌",
       }
     );
-  };
+  } else {
+    const existing = cart.find((item) => item.id === product.id);
+
+    toast.promise(
+      new Promise((resolve, reject) => {
+        setTimeout(() => {
+          try {
+            setCart((prevCart) => {
+              const exist = prevCart.find((item) => item.id === product.id);
+              let updatedCart;
+
+              if (exist) {
+                updatedCart = prevCart.map((item) =>
+                  item.id === product.id
+                    ? { ...item, count: item.count + 1 }
+                    : item
+                );
+              } else {
+                updatedCart = [...prevCart, { ...product, count: 1 }];
+              }
+
+              updateLocalStorage(updatedCart);
+              return updatedCart;
+            });
+
+            setTimeout(() => {
+              cartUser("/cart");
+            }, 2000);
+
+            resolve();
+          } catch (error) {
+            reject();
+          }
+        }, 1000);
+      }),
+      {
+        pending: "در حال افزودن به سبد خرید...",
+        success: existing
+          ? "۱ عدد دیگر اضافه شد ✅"
+          : "محصول به سبد خرید اضافه شد ✅",
+        error: "افزودن به سبد خرید با خطا مواجه شد ❌",
+      }
+    );
+  }
+};
+
 
   function allPriceArrayBasket() {
     const allPrice = cart
@@ -97,11 +152,16 @@ export const CartProvider = ({ children }) => {
     allPriceArrayBasket();
   }, [cart]);
 
+  // useEffect(() => {
+  //   console.log(countProduct);
+  // }, [countProduct]);
+
   return (
     <CartContext.Provider
       value={{
         cart,
         addToCart,
+        setCountProduct,
         removeInBasket,
         discountProductInBasket,
         allPriceInBasket,

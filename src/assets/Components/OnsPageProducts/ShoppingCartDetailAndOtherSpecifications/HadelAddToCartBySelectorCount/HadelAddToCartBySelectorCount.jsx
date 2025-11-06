@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
+import { CartContext } from "../../../../Context/CartContext";
 
-export default function HadelAddToCartBySelectorCount({priceProduct ,setCountProductSelect, setMainDataAfterSelect}) {
-
+export default function HadelAddToCartBySelectorCount({priceProduct ,mainDataAfterSelect,setCountProductSelect, setMainDataAfterSelect}) {
+  const {setCountProduct} = useContext(CartContext)
     const changeCountProduct = (e) => {
         const priceAfterSelectValue =  e * priceProduct
         
         setMainDataAfterSelect(priceAfterSelectValue)
-        setCountProductSelect(null)
         setCountProductSelect(e)
+        setCountProduct(e)
+        
 
     }
 

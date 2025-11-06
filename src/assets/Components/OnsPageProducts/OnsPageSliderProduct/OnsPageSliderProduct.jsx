@@ -25,7 +25,6 @@ export default function OnsPageSliderProduct({
   const nextSlide = () => {
     setCurrentIndex([(currentIndex + 1) % subImg.length, 1]);
   };
-  console.log(img);
 
   const prevSlide = () => {
     setCurrentIndex([

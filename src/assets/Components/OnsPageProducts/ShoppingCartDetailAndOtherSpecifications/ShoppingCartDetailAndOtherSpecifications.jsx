@@ -12,22 +12,12 @@ export default function ShoppingCartDetailAndOtherSpecifications({
   const [mainDataAfterSelect, setMainDataAfterSelect] = useState(null);
   const [countProductSelect, setCountProductSelect] = useState(null);
 
-  useEffect(() => {}, [titleForBasket]);
-  const { addToCart } = useContext(CartContext);
-
-  // const handlerByCountSelectUser = (product) => {
-  //   if (product.count) {
-  //     console.log("دارد");
-  //     console.log(product.count);
-  //     console.log();
-  //   } else {
-  //     product.count = 0
-  //     const neewArra = {...product, count: (product.count = countProductSelect) };
-  //     console.log(neewArra);
-
-  //     console.log("ندارد");
-  //   }
-  // };
+  useEffect(() => {
+    
+      console.log(countProductSelect);
+      
+  }, [mainDataAfterSelect]);
+  const { addToCart  } = useContext(CartContext);
 
 
   return (
@@ -106,8 +96,10 @@ export default function ShoppingCartDetailAndOtherSpecifications({
           countProductSelect={countProductSelect}
           setCountProductSelect={setCountProductSelect}
           setMainDataAfterSelect={setMainDataAfterSelect}
+          mainDataAfterSelect={mainDataAfterSelect}
           priceProduct={filtredOnsProducts[0].price}
         />
+        
 
         {titleForBasket == "از این طعم موجودی نداریم 😭" ? (
           <div className="bg-slate-600 gap-0.5    transition-all  abs rounded-sm text-zinc-700 pt-3 pb-3 justify-center flex items-center">
