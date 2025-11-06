@@ -55,7 +55,7 @@ const addToCart = (product) => {
                     : item
                 );
               } else {
-                updatedCart = [...prevCart, { ...product, count: countProduct }];
+                updatedCart = [...prevCart, { ...product, count: Number(countProduct) }];
               }
 
               updateLocalStorage(updatedCart);
