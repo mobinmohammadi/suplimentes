@@ -63,7 +63,7 @@ export default function MainOnsPageContent(props) {
           isShowSliderMoreOnOneProducts
             ? "ShowSliderMoreOnOneProducts transition-all h-[100vh]"
             : "h-[50vh] transition-all opacity-0 invisible transitions-Custom"
-        } fixed  bg-slate-300 top-0  w-full z-50 right-0`}
+        } fixed top-0  w-full z-50 right-0`}
       >
         <OnsPageSliderProduct
           filtredOnsProducts={filtredOnsProducts[0]}
