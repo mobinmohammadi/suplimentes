@@ -1,7 +1,7 @@
 import React from "react";
 import { useZoom } from "../../../../Context/ZoomContext";
 
-export default function TopbarSlider({currentIndex , subImg}) {
+export default function TopbarSlider({currentIndex , subImg , setIsShowSliderMoreOnOneProducts}) {
 
     const {setIsZoomed} = useZoom()
   return (

@@ -68,7 +68,7 @@ export default function OnsPageSliderProduct({
               </div>
             </div>
             <img
-              className="rounded-md overflow-hidden"
+              className="rounded-md w-full overflow-hidden"
               src={brekedSubimagesProducts[currentIndex]}
               alt=""
             />
@@ -77,7 +77,7 @@ export default function OnsPageSliderProduct({
       ) : (
         <>
           <div className="bg-slate-300 h-full">
-            <TopbarSlider currentIndex={currentIndex} subImg={subImg} />
+            <TopbarSlider  currentIndex={currentIndex} subImg={subImg}  setIsShowSliderMoreOnOneProducts={setIsShowSliderMoreOnOneProducts}/>
 
             <div className="flex flex-col h-[85%] mt-12 justify-between">
               <div className="flex justify-between px-3 sm:px-7 items-center mb-5 h-full">
