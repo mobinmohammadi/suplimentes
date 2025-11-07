@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "react-medium-image-zoom/dist/styles.css";
 import Zoom from "react-medium-image-zoom";
 import { useZoom } from "../../../Context/ZoomContext.jsx";
+import { Link } from "react-router-dom";
 
 export default function ImagesAndSliderForProductsSinglePages({
   isShowPageShare,
@@ -69,7 +70,7 @@ export default function ImagesAndSliderForProductsSinglePages({
               <span className="absolute w-6 h-6 bg-zinc-700 -right-2 rotate-[45deg]"></span>
             </span>
           </div>
-          <div className="relative group border-slate-400 border-solid border-2 w-10 h-10 flex items-center justify-center rounded-md cursor-pointer hover:border-red-400 transition-all hover:text-red-600">
+          <Link to="/Compare" className="relative group border-slate-400 border-solid border-2 w-10 h-10 flex items-center justify-center rounded-md cursor-pointer hover:border-red-400 transition-all hover:text-red-600">
             <svg className="w-5 h-5 ">
               <use href="#eye"></use>
             </svg>
@@ -77,7 +78,7 @@ export default function ImagesAndSliderForProductsSinglePages({
               مقایسه
               <span className="absolute w-6 h-6 bg-zinc-700 -right-2 rotate-[45deg]"></span>
             </span>
-          </div>
+          </Link>
           <div
             onClick={() => handlePageShare()}
             className="relative group border-slate-400 border-solid border-2 w-10 h-10 flex items-center justify-center rounded-md cursor-pointer hover:border-red-400 transition-all hover:text-red-600"

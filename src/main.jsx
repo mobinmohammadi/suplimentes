@@ -19,6 +19,7 @@ import ContactUs from "./Pages/ContactUs/ContactUs.jsx";
 import Articles from "./Pages/Articles/Articles.jsx";
 import EmptyBasket from "./Pages/EmptyBasket/EmptyBasket.jsx";
 import SuccusPayCart from "./assets/Components/PurchaseProcessCart/SuccussPayCart/SuccussPayCart.jsx";
+import Compare from "./Pages/Compare/Compare.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -51,7 +52,7 @@ createRoot(document.getElementById("root")).render(
         </Route>
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/Articles" element={<Articles />} />
-
+        <Route path="/Compare/:productsID" element={<Compare/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/EmptyBasket" element={<EmptyBasket />} />
         <Route path="*" element={<NotFoundPage />} />
