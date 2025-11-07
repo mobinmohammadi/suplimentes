@@ -63,7 +63,7 @@ createRoot(document.getElementById("root")).render(
         </Routes>
       </ProviderComparse>
     </CartProvider>
-    <ToastContainer autoClose={2000} position="top-right" />
+    <ToastContainer autoClose={2000} position="top-left" />
     <Toaster position="center-center" />
   </BrowserRouter>
 );
