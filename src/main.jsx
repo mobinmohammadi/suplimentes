@@ -18,7 +18,7 @@ import TheFirstStepOfTheShoppingCart from "./assets/Components/PurchaseProcessCa
 import ContactUs from "./Pages/ContactUs/ContactUs.jsx";
 import Articles from "./Pages/Articles/Articles.jsx";
 import EmptyBasket from "./Pages/EmptyBasket/EmptyBasket.jsx";
-import SuccusPayCart from "./assets/Components/PurchaseProcessCart/SuccusPayCart/SuccusPayCart.JSX";
+import SuccusPayCart from "./assets/Components/PurchaseProcessCart/SuccussPayCart/SuccussPayCart.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>

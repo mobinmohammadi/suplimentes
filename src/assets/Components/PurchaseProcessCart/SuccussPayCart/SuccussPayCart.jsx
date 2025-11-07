@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import BradCrumbCart from "./../BradCrumbCart/BradCrumbCart";
-import TopBarMobile from "../../TopBarMobile/TopBarMobile.";
-import CheckoutProgressBar from "../CheckoutProgressBar/CheckoutProgressBar";
+
+
 import { Link } from "react-router-dom";
 
 export default function SuccusPayCart() {
