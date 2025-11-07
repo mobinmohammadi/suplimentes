@@ -8,6 +8,7 @@ import BoxesProducts from "./BoxesProducts/BoxesProducts";
 
 export default function ForBarndsProducts() {
   const [isLoader, setIsLoader] = useState(true);
+  const [allProductsInCategury , setAllProductsInCategury] = useState([])
   useEffect(() => {
     window.scrollTo(0, 0);
     setTimeout(() => {
@@ -23,7 +24,10 @@ export default function ForBarndsProducts() {
   useEffect(() => {
     
     const filterCateguryProductsName =  allProducts.filter(item => item.brand == params)
-    console.log(filterCateguryProductsName);
+    setAllProductsInCategury(filterCateguryProductsName)
+
+
+    
     
   },[])
 
@@ -38,7 +42,7 @@ export default function ForBarndsProducts() {
 
       <div className="flex justify-center items-center container-custom  w-full">
         <div className="grid grid-cols-3  md:grid-cols-4  gap-3">
-          {resultFilterProductsByBrand.products.map((products) => (
+          {allProductsInCategury.map((products) => (
             <BoxesProducts {...products} />
           ))}
         </div>

@@ -503,9 +503,235 @@ const allProducts = [
     info: { type: "قرص", origin: "آمریکا", servings: 100, tasteCount: 0 },
     status: "1",
   },
-  
-];
 
+  {
+    id: 34,
+    img: "./Images/cevinlevron/1.webp",
+    price: "258000",
+    brand: "cevinlevron",
+    name: "کراتین کوین لورون",
+  },
+  {
+    id: 35,
+    img: "./Images/cevinlevron/2.webp",
+    price: "365000",
+    brand: "cevinlevron",
+    name: "کراتین کوین لورون",
+  },
+  {
+    id: 36,
+    img: "./Images/cevinlevron/3.webp",
+    price: "2200000",
+    brand: "cevinlevron",
+    name: "کراتین کوین لورون",
+  },
+  {
+    id: 37,
+    img: "/Images/cevinlevron/4.webp",
+    price: "780000",
+    brand: "cevinlevron",
+    name: "کراتین کوین لورون",
+    subImg: [{ id: 1, img: "/Images/cevinlevron/4.webp" }],
+    taste: [],
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+  },
+  {
+    id: 38,
+    img: "./Images/cevinlevron/5.webp",
+    price: "4500000",
+    brand: "cevinlevron",
+    name: "کراتین کوین لورون",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+  },
+  {
+    id: 39,
+    img: "./Images/onnotritions/1.webp",
+    name: "مس گینر",
+    brand: "onnotritions",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+
+    price: 2500000,
+  },
+  {
+    id: 40,
+    img: "./Images/onnotritions/2.webp",
+    name: "آمینو 2222",
+    brand: "onnotritions",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+
+    price: 3650000,
+  },
+  {
+    id: 41,
+    img: "./Images/onnotritions/3.webp",
+    name: "مس گینر 3.5 کیلویی",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+
+    brand: "onnotritions",
+    price: 850000,
+  },
+  {
+    id: 42,
+    img: "./Images/onnotritions/4.webp",
+    name: "پروتعین وی ایزوله ",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+
+    brand: "onnotritions",
+    price: 9850000,
+  },
+  {
+    id: 43,
+    img: "./Images/onnotritions/5.webp",
+    name: "کراتین مونوهیدرات",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+
+    brand: "onnotritions",
+    price: 2500000,
+  },
+
+  {
+    id: 44,
+    img: "./Images/applied/1.webp",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+
+    name: "مس گینر 2.5 کیلویی اپلاید",
+    brand: "applied",
+    price: 5500000,
+  },
+  {
+    id: 45,
+    img: "./Images/applied/2.webp",
+    name: "مس گینر 5 کیلویی اپلاید",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+
+    brand: "applied",
+    price: 12000000,
+  },
+  {
+    id: 46,
+    img: "./Images/applied/3.webp",
+    brand: "applied",
+    name: "ایزو ویی اپلاید",
+    price: 3600000,
+  },
+  {
+    id: 47,
+    img: "./Images/applied/4.webp",
+    brand: "applied",
+    name: "لآمینو اپلاید",
+    price: 5000000,
+  },
+  {
+    id: 48,
+    img: "./Images/applied/5.webp",
+    brand: "applied",
+    name: "bcaa اپلاید",
+    price: 4200000,
+  },
+  {
+    id: 49,
+    brand: "bpi",
+    img: "./Images/bpi/1.webp",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+
+    name: "بست کراتین",
+    price: 2500000,
+  },
+  {
+    id: 50,
+    brand: "bpi",
+    img: "./Images/bpi/2.webp",
+    name: "ایزو HD",
+    info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
+
+    price: 6850000,
+  },
+  {
+    id: 51,
+    brand: "bpi",
+    img: "./Images/bpi/3.webp",
+    name: "MRK",
+    price: 3600000,
+  },
+  {
+    id: 52,
+    brand: "bpi",
+    img: "./Images/bpi/4.webp",
+    name: "بست آمینو",
+    price: 4500000,
+  },
+  {
+    id: 53,
+    brand: "bpi",
+    img: "./Images/bpi/5.webp",
+    name: "کراتین CLA",
+    price: 2650000,
+  },
+  {
+    id: 54,
+    img: "./Images/muscletech/1.webp",
+    name: "مولتی ویتامین",
+    brand: "museltech",
+    price: 1500000,
+  },
+  { id: 54, img: "./Images/muscletech/2.webp", name: "fv", price: 3650000 },
+  {
+    id: 55,
+    img: "./Images/muscletech/3.webp",
+    name: "کراتین سلتک",
+    brand: "museltech",
+    price: 3560000,
+  },
+  {
+    id: 56,
+    img: "./Images/muscletech/4.webp",
+    name: "کلیر ماسل",
+    brand: "museltech",
+    price: 5000000,
+  },
+  {
+    id: 57,
+    img: "./Images/muscletech/5.webp",
+    name: "آمینو بیلد",
+    brand: "museltech",
+    price: 3257000,
+  },
+  {
+    id: 58,
+    brand: "nutrex",
+    img: "./Images/nutrex/1.webp",
+    name: "آرژنین",
+    price: 2500000,
+  },
+  {
+    id: 59,
+    brand: "nutrex",
+    img: "./Images/nutrex/2.webp",
+    name: "HMB اچ ام بی",
+    price: 3650000,
+  },
+  {
+    id: 59,
+    brand: "nutrex",
+    img: "./Images/nutrex/3.webp",
+    name: "پروتعین وی ایزوله",
+    price: 638000,
+  },
+  {
+    id: 60,
+    brand: "nutrex",
+    img: "./Images/nutrex/4.webp",
+    name: "لیپو سیکس",
+    price: 550000,
+  },
+  {
+    id: 61,
+    brand: "nutrex",
+    img: "./Images/nutrex/5.webp",
+    name: "لیپو سون",
+    price: 966000,
+  },
+];
 
 const allCategury = [
   {
@@ -735,38 +961,6 @@ const allBrandLogo = [
     name: "cevinlevron",
     title: "کوین لورون | KEVIN LEVRONE",
     desc: "معرفی برند مکمل کوین لورون امریکا : کوین لورون یک بدنساز حرفه ای IFBB است و به عنوان یکی از جذاب ترین و با استعداد ترین ورزشکاران در تمام دوران ها شناخته می شود. طی سال های گذشته ، سری محصولات تغذیه ورزشی Levrone Signature Series در سراسر اروپا راه افتاده و به سرعت رد پای خود را در بسیاری از کشورهای جهان گسترش داده است. مکمل های کمپانی کوین لورون امریکا و توزیع کننده لهستان مجموعه ای از فرمول های پیشرفته مبتنی بر عملکرد هستند که همه با استفاده از بهترین مواد تشکیل دهنده و دقیق ترین استانداردهای کنترل کیفیت تولید شده اند. لوورون ، یک بار دیگر ، مصمم بود که خط تولید محصولات تغذیه ای ورزشی را برای هر کسی که قصد دارد قدرت افسانه ای ، عضله ، قدرت ، استقامت و رسیدن به بالاترین سطح آمادگی .جسمانی و زیبایی ظاهری را داشته باشد ، ت",
-    products: [
-      {
-        id: 1,
-        img: "./Images/cevinlevron/1.webp",
-        price: "258000",
-        name: "کراتین کوین لورون",
-      },
-      {
-        id: 2,
-        img: "./Images/cevinlevron/2.webp",
-        price: "365000",
-        name: "کراتین کوین لورون",
-      },
-      {
-        id: 3,
-        img: "./Images/cevinlevron/3.webp",
-        price: "2200000",
-        name: "کراتین کوین لورون",
-      },
-      {
-        id: 4,
-        img: "./Images/cevinlevron/4.webp",
-        price: "780000",
-        name: "کراتین کوین لورون",
-      },
-      {
-        id: 5,
-        img: "./Images/cevinlevron/5.webp",
-        price: "4500000",
-        name: "کراتین کوین لورون",
-      },
-    ],
   },
   {
     id: 2,

@@ -6,7 +6,7 @@ import Footer from '../../assets/Components/Footer/Footer'
 
 export default function FilterBrands() {
   return (
-    <div>
+    <div className='container-custom'>
         <TopBarMobile/>
         <ForBarndsProducts/>
         <Footer/>
