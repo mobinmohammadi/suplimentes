@@ -25,7 +25,7 @@ export default function BoxDetailsBasket({ isClickedPost, setISClickedPost }) {
       ? "billingaddress"
       : pathName === "/cart/billingaddress"
       ? "mony"
-      : "#";
+      : "successPay";
 
  return (
     <div className="w-full sm:w-[400px] h-[400px] bg-white flex p-4 font-Dana flex-col gap-5 text-center">

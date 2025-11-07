@@ -18,6 +18,7 @@ import TheFirstStepOfTheShoppingCart from "./assets/Components/PurchaseProcessCa
 import ContactUs from "./Pages/ContactUs/ContactUs.jsx";
 import Articles from "./Pages/Articles/Articles.jsx";
 import EmptyBasket from "./Pages/EmptyBasket/EmptyBasket.jsx";
+import SuccusPayCart from "./assets/Components/PurchaseProcessCart/SuccusPayCart/SuccusPayCart.JSX";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -42,6 +43,10 @@ createRoot(document.getElementById("root")).render(
           <Route
             path="billingaddress/mony"
             element={<TheMonyStepOfTheShoppingCart />}
+          />
+          <Route
+            path="billingaddress/mony/successPay"
+            element={<SuccusPayCart />}
           />
         </Route>
         <Route path="/contactus" element={<ContactUs />} />
