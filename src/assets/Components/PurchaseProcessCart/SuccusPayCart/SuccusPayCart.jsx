@@ -14,7 +14,7 @@ export default function SuccusPayCart() {
   return (
     <div>
       {/* <TopBarMobile />. */}
-      <div className="pl-4 pr-4 flex flex-col pt-5 gap-7 container-custom text-sm font-Dana-Bold">
+      <div className="pl-4 pr-4 flex flex-col  pt-5 gap-7 container-custom text-sm font-Dana-Bold">
         {/* <BradCrumbCart />
 
         <CheckoutProgressBar currentStep={4} /> */}
