@@ -45,20 +45,22 @@ export default function OnsPageProducts() {
 
   return (
     <>
-      <TopBarMobile />
-      <div className="relative top-[90px] sm:pt-10">
-        <RoadMapSite
-          name={nameBreadCrumb.name}
-          titleBreadCrumb={titleBreadCrumb}
-          linkCategury={linkCategury}
-        />
-        <ZoomProvider >
-          <div className="">
-            <OnsPageContent />
-          </div>
-        </ZoomProvider>
-        <SliderProducts title="محصولات مرتبط" />
-        <Footer />
+      <div className="container-custom">
+        <TopBarMobile />
+        <div className="relative top-[90px] sm:pt-10">
+          <RoadMapSite
+            name={nameBreadCrumb.name}
+            titleBreadCrumb={titleBreadCrumb}
+            linkCategury={linkCategury}
+          />
+          <ZoomProvider>
+            <div className="">
+              <OnsPageContent />
+            </div>
+          </ZoomProvider>
+          <SliderProducts title="محصولات مرتبط" />
+          <Footer />
+        </div>
       </div>
     </>
   );
