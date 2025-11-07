@@ -22,7 +22,7 @@ export default function StatusBoxCompare({ img, name, price, id }) {
       <span className="text-xs max-w-48">{name}</span>
       <span>{price.toLocaleString()} تومان</span>
       <div className="bg-[#4E12A4] hover:bg-teal-600 transition-all cursor-pointer pt-1 pb-1 pr-3 pl-3 rounded-md">
-        <Link className="text-x text-white">مشاهده محصول</Link>
+        <Link to={`/onspageproduct/${id}`} className="text-x text-white">مشاهده محصول</Link>
       </div>
     </div>
   );
