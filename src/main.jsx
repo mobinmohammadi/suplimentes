@@ -20,44 +20,50 @@ import Articles from "./Pages/Articles/Articles.jsx";
 import EmptyBasket from "./Pages/EmptyBasket/EmptyBasket.jsx";
 import SuccusPayCart from "./assets/Components/PurchaseProcessCart/SuccussPayCart/SuccussPayCart.jsx";
 import Compare from "./Pages/Compare/Compare.jsx";
+import { ProviderComparse } from "./assets/Context/ComparseContext/ComparseContext.jsx";
+import { Toaster } from "react-hot-toast";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <CartProvider>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/onspageproduct/:ProductID"
-          element={<OnsPageProducts />}
-        />
-        <Route path="/productsBrand/:BrandName" element={<FilterBrands />} />
-        <Route
-          path="/categuryByProducts/:categuryProduct"
-          element={<CategurtByProducts />}
-        />
-        <Route path="/cart" element={<PurchaseProcessCart />}>
-          <Route index element={<TheFirstStepOfTheShoppingCart />} />
+      <ProviderComparse>
+        <Routes>
+          <Route path="/" element={<Home />} />
           <Route
-            path="billingaddress"
-            element={<TheSeconedStepOfTheShoppingCart />}
+            path="/onspageproduct/:ProductID"
+            element={<OnsPageProducts />}
           />
+          <Route path="/productsBrand/:BrandName" element={<FilterBrands />} />
           <Route
-            path="billingaddress/mony"
-            element={<TheMonyStepOfTheShoppingCart />}
+            path="/categuryByProducts/:categuryProduct"
+            element={<CategurtByProducts />}
           />
-          <Route
-            path="billingaddress/mony/successPay"
-            element={<SuccusPayCart />}
-          />
-        </Route>
-        <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/Articles" element={<Articles />} />
-        <Route path="/Compare" element={<Compare/>}/>
-        <Route path="/login" element={<Login />} />
-        <Route path="/EmptyBasket" element={<EmptyBasket />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+          <Route path="/cart" element={<PurchaseProcessCart />}>
+            <Route index element={<TheFirstStepOfTheShoppingCart />} />
+            <Route
+              path="billingaddress"
+              element={<TheSeconedStepOfTheShoppingCart />}
+            />
+            <Route
+              path="billingaddress/mony"
+              element={<TheMonyStepOfTheShoppingCart />}
+            />
+            <Route
+              path="billingaddress/mony/successPay"
+              element={<SuccusPayCart />}
+            />
+          </Route>
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/Articles" element={<Articles />} />
+
+          <Route path="/Compare" element={<Compare />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/EmptyBasket" element={<EmptyBasket />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </ProviderComparse>
     </CartProvider>
-    <ToastContainer autoClose={2000} position="top-left" />
+    <ToastContainer autoClose={2000} position="top-right" />
+    <Toaster position="center-center" />
   </BrowserRouter>
 );
