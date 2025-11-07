@@ -5,11 +5,12 @@ import CheckoutProgressBar from "../CheckoutProgressBar/CheckoutProgressBar";
 import { Link } from "react-router-dom";
 
 export default function SuccusPayCart() {
-    useEffect(() => {
-        setTimeout(() => {
-            window.location.href = "/"
-        }, 2000);
-    },[])
+  useEffect(() => {
+    setTimeout(() => {
+      localStorage.removeItem("cart", "");
+      window.location.href = "/";
+    }, 2000);
+  }, []);
   return (
     <div>
       {/* <TopBarMobile />. */}
@@ -29,7 +30,9 @@ export default function SuccusPayCart() {
             </div>
             <div className="flex gap-1 ">
               <span>کد پیگیری شما :</span>
-              <span className="tracking-wider">{Math.ceil(Math.random() * 10000000000000000) }</span>
+              <span className="tracking-wider">
+                {Math.ceil(Math.random() * 10000000000000000)}
+              </span>
             </div>
             <div className="">
               <Link
