@@ -52,7 +52,7 @@ createRoot(document.getElementById("root")).render(
         </Route>
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/Articles" element={<Articles />} />
-        <Route path="/Compare/:productsID" element={<Compare/>}/>
+        <Route path="/Compare" element={<Compare/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/EmptyBasket" element={<EmptyBasket />} />
         <Route path="*" element={<NotFoundPage />} />
