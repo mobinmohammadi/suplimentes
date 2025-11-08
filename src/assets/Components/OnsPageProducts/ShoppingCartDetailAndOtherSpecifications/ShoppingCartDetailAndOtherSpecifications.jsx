@@ -12,13 +12,7 @@ export default function ShoppingCartDetailAndOtherSpecifications({
   const [mainDataAfterSelect, setMainDataAfterSelect] = useState(null);
   const [countProductSelect, setCountProductSelect] = useState(null);
 
-  useEffect(() => {
-    
-      console.log(countProductSelect);
-      
-  }, [mainDataAfterSelect]);
-  const { addToCart  } = useContext(CartContext);
-
+  const { addToCart } = useContext(CartContext);
 
   return (
     <div className="bg-[#f5f5f5] sm:max-w-60 w-full pr-2 pl-2 & > *:border-b-1 & > *:pb-2 & > *:border-b-slate-200 flex flex-col gap-2">
@@ -99,7 +93,6 @@ export default function ShoppingCartDetailAndOtherSpecifications({
           mainDataAfterSelect={mainDataAfterSelect}
           priceProduct={filtredOnsProducts[0].price}
         />
-        
 
         {titleForBasket == "از این طعم موجودی نداریم 😭" ? (
           <div className="bg-slate-600 gap-0.5    transition-all  abs rounded-sm text-zinc-700 pt-3 pb-3 justify-center flex items-center">
@@ -111,7 +104,10 @@ export default function ShoppingCartDetailAndOtherSpecifications({
             </span>
           </div>
         ) : (
-          <div onClick={() => addToCart(filtredOnsProducts[0])} className="bg-green-700 gap-0.5 abs rounded-sm text-white pt-3 pb-3 justify-center flex items-center">
+          <div
+            onClick={() => addToCart(filtredOnsProducts[0])}
+            className="bg-green-700 gap-0.5 abs rounded-sm text-white pt-3 pb-3 justify-center flex items-center"
+          >
             <div className="flex  gap-0.5">
               <svg className="w-5 h-5 ">
                 <use href="#shopping-cart"></use>
