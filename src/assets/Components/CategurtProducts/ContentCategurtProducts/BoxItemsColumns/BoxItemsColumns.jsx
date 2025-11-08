@@ -19,10 +19,10 @@ export default function BoxItemsColumns({ items }) {
         </div>
       </div>
       <div className="flex & > *:text-x justify-center gap-0.5 sm:gap-1 & > *:line-clamp-1 flex-col pt-1 pb-1 pl-2 text-xs border-r-1 max-w-28 border-slate-300 pr-5 border-solid">
-        <span >ساخت کشور : {info.origin}</span>
-        <span>نوع محصول : {info.type}</span>
-        <span>تعداد سروینگ : {info.servings}</span>
-        <span>دارای {info.tasteCount} طعم مختلف</span>
+        <span >ساخت کشور : {info?.origin}</span>
+        <span>نوع محصول : {info?.type}</span>
+        <span>تعداد سروینگ : {info?.servings}</span>
+        <span>دارای {info?.tasteCount} طعم مختلف</span>
       </div>
     </div>
   );

@@ -119,20 +119,19 @@ export default function Compare() {
               محصول یافت شد{" "}
             </div>
             <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 mmd:grid-cols-4 gap-5 pt-3">
-  {(arrayAfterSearchTitle.length
-    ? arrayAfterSearchTitle
-    : arrayAferSelectCategury.length
-    ? arrayAferSelectCategury
-    : allProducts
-  ).map((item, index) => (
-    <BoxCompare
-      key={index + 1}
-      item={item}
-      setIsShowModalProduct={setIsShowModalProduct}
-    />
-  ))}
-</div>
-
+              {(arrayAfterSearchTitle.length
+                ? arrayAfterSearchTitle
+                : arrayAferSelectCategury.length
+                ? arrayAferSelectCategury
+                : allProducts
+              ).map((item, index) => (
+                <BoxCompare
+                  key={index + 1}
+                  item={item}
+                  setIsShowModalProduct={setIsShowModalProduct}
+                />
+              ))}
+            </div>
           </div>
         </div>
         {isShowModalProduct ? (
