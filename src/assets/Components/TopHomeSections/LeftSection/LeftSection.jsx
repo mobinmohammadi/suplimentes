@@ -4,8 +4,8 @@ import { allProducts } from "../../../../Data";
 
 export default function LeftSection() {
   return (
-    <div className=" rounded-md bg-white  pt-4 pb-4 font-Morabba-Bold">
-      <div className="flex gap-1 pr-2 items-center pb-4 border-b-slate-200 border-b-1 border-solid">
+    <div className=" rounded-md bg-white pt-4 pb-4 font-Morabba-Bold">
+      <div className="flex  gap-1 pr-2 items-center pb-4 border-b-slate-200 border-b-1 border-solid">
         <svg className="w-5 h-5">
           <use href="#chevron-left"></use>
         </svg>

@@ -37,7 +37,7 @@ export default function RightSection() {
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           onAutoplayTimeLeft={onAutoplayTimeLeft}
-          className="mySwiper & > *:w-[60%]  & > *:h-[40px] & > *:rounded-sm"
+          className="mySwiper & > *:w-[60%]  & > *:max-h-[250px] & > *:rounded-sm"
         >
           <SwiperSlide>
             <img className=" rounded-sm " src="./Images/slider1.webp" alt="" />
