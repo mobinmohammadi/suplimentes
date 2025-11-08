@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default function BradCrumb(props) {
   let params = location.pathname;
   let title = "";
-  console.log(params);
 
   if (params == "/contactus") {
     title = "ارتباط با ما";

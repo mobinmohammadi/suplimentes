@@ -2,6 +2,7 @@ const allProducts = [
   {
     id: 1,
     name: "کراتین کوین لورون",
+    nameEN: "creatine",
     brand: "cevinlevron",
     price: 2000000,
     img: "./../Images/Products/2.webp",
@@ -19,6 +20,7 @@ const allProducts = [
   {
     id: 2,
     name: "کراتین رونی کلمن",
+    nameEN: "creatine",
     brand: "ronniecoleman",
     price: 2750000,
     img: "./../Images/Products/1.webp",
@@ -37,6 +39,8 @@ const allProducts = [
     id: 3,
     name: "کراتین اپلاید",
     brand: "Applied",
+    nameEN: "creatine",
+
     price: 3250000,
     img: "./../Images/Products/3.webp",
     subImg: [
@@ -54,6 +58,7 @@ const allProducts = [
     id: 4,
     name: "پروتعین وی اپلاید 3 کیلویی",
     brand: "Applied",
+    nameEN: "protein",
     price: 4000000,
     img: "./../Images/Products/4.webp",
     subImg: [
@@ -79,6 +84,7 @@ const allProducts = [
     id: 5,
     name: "گلوتامین ماسلتک",
     brand: "Muscletech",
+    nameEN: "glutamine",
     price: 825000,
     img: "./../Images/Products/5.webp",
     subImg: [
@@ -98,6 +104,8 @@ const allProducts = [
     brand: "Muscletech",
     price: 3600000,
     img: "./../Images/Products/8-2.webp",
+    nameEN: "creatine",
+
     subImg: [
       { id: 1, img: "./../Images/Products/8-2.webp" },
       { id: 2, img: "./../Images/Products/8-3.webp" },
@@ -114,6 +122,7 @@ const allProducts = [
     id: 7,
     name: "گینر رول وان کیسه ای",
     brand: "Rule One",
+    nameEN: "gainer",
     price: 5490000,
     img: "./../Images/Products/10-1.webp",
     subImg: [
@@ -207,6 +216,8 @@ const allProducts = [
     id: 13,
     name: "گینر اپتیموم 2 کیلویی",
     brand: "Optimum Nutrition",
+    nameEN: "gainer",
+
     price: 4980000,
     img: "./../Images/Products/17.webp",
     subImg: [],
@@ -252,6 +263,8 @@ const allProducts = [
   {
     id: 16,
     name: "کراتین ناترند",
+    nameEN: "creatine",
+
     brand: "Nutrend",
     price: 3100000,
     img: "./../Images/Products/20.webp",
@@ -365,6 +378,8 @@ const allProducts = [
     id: 24,
     name: "گلوتامین اپتیموم نوتریشن",
     brand: "Optimum Nutrition",
+    nameEN: "glutamine",
+
     price: 2100000,
     img: "./../Images/Products/21.jpeg",
     subImg: [
@@ -382,6 +397,8 @@ const allProducts = [
     id: 25,
     name: "گلوتامین سایتک نوتریشن",
     brand: "Scitec Nutrition",
+    nameEN: "glutamine",
+
     price: 1890000,
     img: "./../Images/Products/22.webp",
     subImg: [
@@ -397,7 +414,11 @@ const allProducts = [
   },
   {
     id: 26,
+    nameEN: "glutamine",
+
     name: "گلوتامین بی‌پی‌آی اسپرتس",
+    nameEN: "glutamine",
+
     brand: "BPI Sports",
     price: 2000000,
     img: "./../Images/Products/24.webp",
@@ -417,6 +438,8 @@ const allProducts = [
     id: 27,
     name: "گلوتامین ناترکس",
     brand: "Nutrex",
+    nameEN: "glutamine",
+
     price: 1750000,
     img: "./../Images/Products/25.webp",
     subImg: [
@@ -433,6 +456,8 @@ const allProducts = [
   {
     id: 28,
     name: "گلوتامین رونی کلمن",
+    nameEN: "glutamine",
+
     brand: "Ronnie Coleman",
     price: 2200000,
     img: "./../Images/Products/26.jpeg",
@@ -537,6 +562,7 @@ const allProducts = [
     price: "258000",
     brand: "cevinlevron",
     name: "کراتین کوین لورون",
+    nameEN: "creatine",
   },
   {
     id: 35,
@@ -544,6 +570,7 @@ const allProducts = [
     price: "365000",
     brand: "cevinlevron",
     name: "کراتین کوین لورون",
+    nameEN: "creatine",
   },
   {
     id: 36,
@@ -551,6 +578,7 @@ const allProducts = [
     price: "2200000",
     brand: "cevinlevron",
     name: "کراتین کوین لورون",
+    nameEN: "creatine",
   },
   {
     id: 37,
@@ -558,6 +586,8 @@ const allProducts = [
     price: "780000",
     brand: "cevinlevron",
     name: "کراتین کوین لورون",
+    nameEN: "creatine",
+
     subImg: [{ id: 1, img: "/Images/cevinlevron/4.webp" }],
     taste: [],
     info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
@@ -568,12 +598,16 @@ const allProducts = [
     price: "4500000",
     brand: "cevinlevron",
     name: "کراتین کوین لورون",
+    nameEN: "creatine",
+
     info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
   },
   {
     id: 39,
     img: "./Images/onnotritions/1.webp",
     name: "مس گینر",
+    nameEN: "gainer",
+
     brand: "onnotritions",
     info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
 
@@ -592,6 +626,8 @@ const allProducts = [
     id: 41,
     img: "./Images/onnotritions/3.webp",
     name: "مس گینر 3.5 کیلویی",
+    nameEN: "gainer",
+
     info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
 
     brand: "onnotritions",
@@ -601,6 +637,8 @@ const allProducts = [
     id: 42,
     img: "./Images/onnotritions/4.webp",
     name: "پروتعین وی ایزوله ",
+    nameEN: "protein",
+
     info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
 
     brand: "onnotritions",
@@ -610,6 +648,8 @@ const allProducts = [
     id: 43,
     img: "./Images/onnotritions/5.webp",
     name: "کراتین مونوهیدرات",
+    nameEN: "creatine",
+
     info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
 
     brand: "onnotritions",
@@ -622,13 +662,19 @@ const allProducts = [
     info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
 
     name: "مس گینر 2.5 کیلویی اپلاید",
+    nameEN: "gainer",
+
     brand: "applied",
     price: 5500000,
   },
   {
     id: 45,
     img: "./Images/applied/2.webp",
+    nameEN: "gainer",
+
     name: "مس گینر 5 کیلویی اپلاید",
+    nameEN: "gainer",
+
     info: { type: "قرص", origin: "مجارستان", servings: 500, tasteCount: 0 },
 
     brand: "applied",
@@ -652,6 +698,7 @@ const allProducts = [
     id: 48,
     img: "./Images/applied/5.webp",
     brand: "applied",
+    nameEN: "bcaa",
     name: "bcaa اپلاید",
     price: 4200000,
   },
@@ -663,6 +710,7 @@ const allProducts = [
 
     name: "بست کراتین",
     price: 2500000,
+    nameEN: "creatine",
   },
   {
     id: 50,
@@ -692,6 +740,8 @@ const allProducts = [
     brand: "bpi",
     img: "./Images/bpi/5.webp",
     name: "کراتین CLA",
+    nameEN: "creatine",
+
     price: 2650000,
   },
   {
@@ -706,6 +756,8 @@ const allProducts = [
     id: 55,
     img: "./Images/muscletech/3.webp",
     name: "کراتین سلتک",
+    nameEN: "creatine",
+
     brand: "museltech",
     price: 3560000,
   },
@@ -742,6 +794,8 @@ const allProducts = [
     brand: "nutrex",
     img: "./Images/nutrex/3.webp",
     name: "پروتعین وی ایزوله",
+    nameEN: "protein",
+
     price: 638000,
   },
   {
@@ -778,6 +832,7 @@ const allCategury = [
     name: "گینر",
     img: "./Images/Categury/3.webp",
     link: "/categuryByProducts/gainer",
+    nameEN: "gainer",
   },
   {
     id: 4,
@@ -788,6 +843,8 @@ const allCategury = [
   {
     id: 5,
     name: "کراتین",
+    nameEN: "creatine",
+
     img: "./Images/Categury/6.webp",
     link: "/categuryByProducts/ceratin",
   },
@@ -800,6 +857,8 @@ const allCategury = [
   {
     id: 7,
     name: "گلوتامین",
+    nameEN: "glutamine",
+
     img: "./Images/Categury/8.webp",
     link: "/categuryByProducts/glotamin",
   },
@@ -812,7 +871,9 @@ const allCategury = [
   {
     id: 9,
     name: "بی سی ای ای",
+
     img: "./Images/Categury/2.png",
+    nameEN: "bcaa",
     link: "/categuryByProducts/bcaa",
   },
   {
@@ -827,6 +888,8 @@ const preSellProducts = [
   {
     id: 1,
     name: `کراتین کوین لورون`,
+    nameEN: "creatine",
+
     price: 2_000_000,
     img: "./../Images/Products/2.webp",
     subImg: [
@@ -845,6 +908,8 @@ const preSellProducts = [
   {
     id: 2,
     name: "کراتین رونی کلمن",
+    nameEN: "creatine",
+
     price: 2_750_000,
     img: "./../Images/Products/1.webp",
     subImg: [
@@ -863,6 +928,8 @@ const preSellProducts = [
   {
     id: 3,
     name: "کراتین اپلاید",
+    nameEN: "creatine",
+
     price: 3_250_000,
     img: "./../Images/Products/3.webp",
     subImg: [
@@ -881,6 +948,8 @@ const preSellProducts = [
   {
     id: 4,
     name: "پروتعین وی اپلاید 3 کیلویی",
+    nameEN: "protein",
+
     price: 4_000_000,
     img: "./../Images/Products/4.webp",
     subImg: [
@@ -910,6 +979,8 @@ const preSellProducts = [
   {
     id: 5,
     name: "گلوتامین ماسلتک",
+    nameEN: "glutamine",
+
     price: 825_000,
     img: "./../Images/Products/5.webp",
     subImg: [
@@ -928,6 +999,8 @@ const preSellProducts = [
   {
     id: 6,
     name: "کراتین مونوهیدرات ماسلتک 1.5 کیلویی",
+    nameEN: "creatine",
+
     img: "./../Images/Products/8-2.webp",
     subImg: [
       {
@@ -946,6 +1019,8 @@ const preSellProducts = [
   {
     id: 7,
     name: "گینر رول وان کیسه ای ",
+    nameEN: "gainer",
+
     price: 5_490_000,
     img: "./../Images/Products/10-1.webp",
     subImg: [
@@ -999,6 +1074,8 @@ const allBrandLogo = [
       {
         id: 1,
         img: "./Images/onnotritions/1.webp",
+        nameEN: "gainer",
+
         name: "مس گینر",
         price: 2500000,
       },
@@ -1012,18 +1089,24 @@ const allBrandLogo = [
         id: 3,
         img: "./Images/onnotritions/3.webp",
         name: "مس گینر 3.5 کیلویی",
+        nameEN: "gainer",
+
         price: 850000,
       },
       {
         id: 4,
         img: "./Images/onnotritions/4.webp",
         name: "پروتعین وی ایزوله ",
+        nameEN: "protein",
+
         price: 9850000,
       },
       {
         id: 5,
         img: "./Images/onnotritions/5.webp",
         name: "کراتین مونوهیدرات",
+        nameEN: "creatine",
+
         price: 2500000,
       },
     ],
@@ -1039,12 +1122,16 @@ const allBrandLogo = [
         id: 1,
         img: "./Images/applied/1.webp",
         name: "مس گینر 2.5 کیلویی اپلاید",
+        nameEN: "gainer",
+
         price: 5500000,
       },
       {
         id: 2,
         img: "./Images/applied/2.webp",
         name: "مس گینر 5 کیلویی اپلاید",
+        nameEN: "gainer",
+
         price: 12000000,
       },
       {
@@ -1062,6 +1149,7 @@ const allBrandLogo = [
       {
         id: 5,
         img: "./Images/applied/5.webp",
+        nameEN: "bcaa",
         name: "bcaa اپلاید",
         price: 4200000,
       },
@@ -1134,6 +1222,7 @@ const allBrandLogo = [
         img: "./Images/nutrex/3.webp",
         name: "پروتعین وی ایزوله",
         price: 638000,
+        nameEN: "protein",
       },
       {
         id: 4,
@@ -1174,6 +1263,8 @@ const allArticles = [
   {
     id: 5,
     title: "بهترین کراتین ترکیبی برای حجم",
+    nameEN: "creatine",
+
     img: "./Images/Articles/5.webp",
     disc: "کراتین ترکیبی، به‌عنوان یک فرم پیشرفته‌تر از کراتین، ترکیبی از انواع مختلف کراتین و سایر مواد مغذی است که به افزایش جذب و اثربخشی آن کمک می‌کند...",
   },
@@ -1209,6 +1300,8 @@ const RelatedProducts = [
   {
     id: 4,
     name: "پروتعین وی اپلاید 3 کیلویی",
+    nameEN: "protein",
+
     price: 4_000_000,
     img: "./../Images/Products/4.webp",
   },

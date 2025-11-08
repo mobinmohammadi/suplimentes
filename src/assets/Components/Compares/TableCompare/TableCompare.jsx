@@ -4,7 +4,6 @@ import ComparseContext from "../../../Context/ComparseContext/ComparseContext";
 export default function TableCompare() {
   const { arrayComparse } = useContext(ComparseContext);
 
-  console.log(arrayComparse);
 
   return (
     <div className="flex flex-col items-center gap-1 bg-white">
