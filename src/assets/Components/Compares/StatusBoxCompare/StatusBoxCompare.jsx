@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import ComparseContext from "../../../assets/Context/ComparseContext/ComparseContext";
+import ComparseContext from "../../../Context/ComparseContext/ComparseContext";
 import { Toaster } from "react-hot-toast";
 
 export default function StatusBoxCompare({ img, name, price, id }) {

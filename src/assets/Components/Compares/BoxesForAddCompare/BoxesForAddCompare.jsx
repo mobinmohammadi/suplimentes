@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ComparseContext from "../../../assets/Context/ComparseContext/ComparseContext";
+import ComparseContext from "../../../Context/ComparseContext/ComparseContext";
 import StatusBoxCompare from "./../StatusBoxCompare/StatusBoxCompare"
 export default function BoxesForAddCompare({setIsShowModalProduct}) {
   const { arrayComparse } = useContext(ComparseContext);

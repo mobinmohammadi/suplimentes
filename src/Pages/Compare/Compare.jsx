@@ -3,13 +3,14 @@ import BradCrumb from "../../assets/Components/CustomElem/BradCrumb/BradCrumb";
 import TopBarMobile from "../../assets/Components/TopBarMobile/TopBarMobile.";
 import Footer from "../../assets/Components/Footer/Footer";
 import { allProducts } from "../../Data";
-import BoxCompare from "./BoxCompare/BoxCompare";
-import BoxesForAddCompare from "./BoxesForAddCompare/BoxesForAddCompare";
+import BoxCompare from "../../assets/Components/Compares/BoxCompare/BoxCompare";
+import BoxesForAddCompare from "../../assets/Components/Compares/BoxesForAddCompare/BoxesForAddCompare";
+import TableCompare from "../../assets/Components/Compares/TableCompare/TableCompare";
 
 export default function Compare() {
   const [isShowModalProduct, setIsShowModalProduct] = useState(false);
   return (
-    <div className="conatiner-custom relative flex  flex-col gap-10 font-Dana">
+    <div className="conatiner-custom relative flex  flex-col gap-10 font-Dana pr-2 pl-2">
       <TopBarMobile />
       <BradCrumb />
       <BoxesForAddCompare setIsShowModalProduct={setIsShowModalProduct} />
@@ -20,7 +21,7 @@ export default function Compare() {
             : "opacity-0 invisible h-0 top-full"
         } w-[90%] transition-md pb-6 p overflow-hidden bg-slate-200  left-1/2 -translate-x-1/2 -translate-y-1/2 fixed  z-50 rounded-sm `}
       >
-        <div className="flex relative pr-2 pl-2 bg-white items-center w-full pt-2 pb-2">
+        <div className="flex relative  bg-white items-center w-full pt-2 pb-2">
           <div className="flex sm:w-[90%] sm:border-zinc-400 rounded-md border-slate-200 border-2 pt-1 pb-1">
             <span className="pt-1 pr-2 pl-2 pb-1 text-zinc-800 sm:block hidden">
               جستوجو
@@ -76,6 +77,7 @@ export default function Compare() {
       ) : (
         ""
       )}
+      <TableCompare/>
 
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import ComparseContext from "../../../assets/Context/ComparseContext/ComparseContext";
+import ComparseContext from "../../../Context/ComparseContext/ComparseContext";
 
 export default function BoxCompare({ item, setIsShowModalProduct }) {
   const { addToComparse } = useContext(ComparseContext);
