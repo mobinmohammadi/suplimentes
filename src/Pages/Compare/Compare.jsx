@@ -10,7 +10,7 @@ import TableCompare from "../../assets/Components/Compares/TableCompare/TableCom
 export default function Compare() {
   const [isShowModalProduct, setIsShowModalProduct] = useState(false);
   return (
-    <div className="container-custom h-full">
+    <div className="container-custom">
       <div className="relative flex  flex-col gap-10 font-Dana pr-2 pl-2">
         <TopBarMobile />
         <BradCrumb />
