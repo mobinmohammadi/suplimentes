@@ -744,13 +744,7 @@ const allProducts = [
 
     price: 2650000,
   },
-  {
-    id: 54,
-    img: "./Images/muscletech/1.webp",
-    name: "مولتی ویتامین",
-    brand: "museltech",
-    price: 1500000,
-  },
+
   { id: 54, img: "./Images/muscletech/2.webp", name: "fv", price: 3650000 },
   {
     id: 55,
@@ -782,13 +776,7 @@ const allProducts = [
     name: "آرژنین",
     price: 2500000,
   },
-  {
-    id: 59,
-    brand: "nutrex",
-    img: "./Images/nutrex/2.webp",
-    name: "HMB اچ ام بی",
-    price: 3650000,
-  },
+
   {
     id: 59,
     brand: "nutrex",
