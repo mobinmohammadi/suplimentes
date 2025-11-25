@@ -17,28 +17,28 @@ export default function CategurtProducts() {
   const [isRowAndColumns, setIsRowAndColumns] = useState("row");
   const categuryName = useParams();
   let title = "";
-  let categoryKey = null
+  let categoryKey = null;
   switch (categuryName.categuryProduct) {
     case "protein":
       title = "پروتعین وی";
-      categoryKey = "protein"
+      categoryKey = "protein";
       break;
     case "amino":
       title = "آمینو";
-      categoryKey = "amino"
+      categoryKey = "amino";
       break;
     case "gainer":
       title = "گینر";
-      categoryKey = "gainer"
+      categoryKey = "gainer";
       break;
     case "carbomas":
       title = "کربو مس";
-      categoryKey = "carbomas"
+      categoryKey = "carbomas";
 
       break;
     case "ceratin":
       title = "کراتین";
-      categoryKey = "creatin"
+      categoryKey = "creatin";
 
       break;
     case "testboaster":
@@ -46,34 +46,31 @@ export default function CategurtProducts() {
       break;
     case "glotamin":
       title = "گلوتامین";
-      categoryKey = "glotamin"
+      categoryKey = "glotamin";
 
       break;
     case "moltivitamin":
       title = "مولتی ویتامین";
-      categoryKey = "moltivitamin"
+      categoryKey = "moltivitamin";
       break;
     case "bcaa":
-      
       title = "بی سی ای ای";
-      categoryKey = "bcaa"
+      categoryKey = "bcaa";
       break;
-    default: {
-      title = "";
-    }
-    setArrayAllProducts(fitredProduct)
+    default:
+      {
+        title = "";
+      }
+      setArrayAllProducts(fitredProduct);
   }
   useEffect(() => {
     let filtred = allProducts.filter((item) => {
-
-      const matchCategury = categoryKey ? item.categury === categoryKey : true
+      const matchCategury = categoryKey ? item.categury === categoryKey : false;
       const matchSearch = item.name.includes(valueSearchInCateguryPage);
-      const matchPrice = item.price >= filterByRange
+      const matchPrice = item.price >= filterByRange;
 
-      return matchCategury && matchSearch && matchPrice
-    }
-
-    );
+      return matchCategury && matchSearch && matchPrice;
+    });
     setArrayAllProducts(filtred);
   }, [filterByRange, valueSearchInCateguryPage]);
 

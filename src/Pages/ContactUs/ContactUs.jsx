@@ -27,8 +27,7 @@ export default function ContactUs() {
     validationSchema: validationsContactAs,
     onSubmit: handlerFormContent,
   });
-  function handlerFormContent() {
-  }
+  function handlerFormContent() {}
 
   return (
     <div className="">
@@ -36,7 +35,7 @@ export default function ContactUs() {
         <TopBarMobile />
         <div className="mt-4 pr-5 pl-5 flex flex-col gap-5">
           <BradCrumb />
-          <div className="bg-white flex flex-col sm:flex-row gap-5 pt-12 pb-7 pr-5 pl-5 w-full rounded-sm">
+          <div className="bg-white container-custom flex flex-col sm:flex-row gap-5 pt-12 pb-7 pr-5 pl-5 w-full rounded-sm">
             <div className="w-full flex flex-col gap-5 sm:gap-2  Morabba sm:w-[60%]">
               <TitleBySections
                 font="Morabba"
@@ -69,7 +68,9 @@ export default function ContactUs() {
                     </div>
 
                     {formik.touched && formik.errors.name && (
-                      <span className="text-red-800 text-xs sm:text-sm">{formik.errors.name}</span>
+                      <span className="text-red-800 text-xs sm:text-sm">
+                        {formik.errors.name}
+                      </span>
                     )}
                   </div>
                   <div className="flex gap-2 flex-col">
@@ -89,7 +90,9 @@ export default function ContactUs() {
                       />
                     </div>
                     {formik.touched && formik.errors.email && (
-                      <span className="text-red-800 text-xs sm:text-sm">{formik.errors.email}</span>
+                      <span className="text-red-800 text-xs sm:text-sm">
+                        {formik.errors.email}
+                      </span>
                     )}
                   </div>
                 </div>
@@ -104,7 +107,9 @@ export default function ContactUs() {
                     ></textarea>
                   </div>
                   {formik.touched && formik.errors.bodyContent && (
-                    <span className="text-red-800 text-xs sm:text-sm">{formik.errors.bodyContent}</span>
+                    <span className="text-red-800 text-xs sm:text-sm">
+                      {formik.errors.bodyContent}
+                    </span>
                   )}
                 </div>
                 <div className="text-xs flex font-Dana items-center justify-between & > *:bg-red-600 text-white &  > *:cursor-pointer &  > *:hover:bg-red-800 &  > *:transition-all &  > *:rounded-sm & > *:pr-3 & > *:pl-3 & > *:pt-1 & > *:pb-1">
@@ -159,7 +164,9 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="container-custom">
+        <Footer />
+      </div>
     </div>
   );
 }

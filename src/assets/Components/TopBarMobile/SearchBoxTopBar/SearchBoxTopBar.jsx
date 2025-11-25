@@ -149,8 +149,8 @@ export default function SearchBoxTopBar({
                   </div>
 
                   {arrayResultBeforSearch.map((item, index) => (
-                    <div className="pt-2 pb-2">
-                      <BoxForResultSearches key={index + 1} {...item} />
+                    <div  key={index + 1} className="pt-2 pb-2">
+                      <BoxForResultSearches {...item} />
                     </div>
                   ))}
                 </div>
@@ -172,6 +172,7 @@ export default function SearchBoxTopBar({
                         <div className="border-b-2 border-solid border-slate-200 pb-4 grid s:grid-cols-2 x:grid-cols-4 xs:grid-cols-4 md:grid-cols-5 mmd:grid-cols-7  gap-2">
                           {papularSearchesInwebsite.map((item, index) => (
                             <div
+                            key={index + 1}
                               onClick={() =>
                                 searchingTopResershHandler(item.title)
                               }

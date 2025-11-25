@@ -82,7 +82,7 @@ export default function ContentCategurtProducts({
         } grid-cols-2 transitions-custom x:grid-cols-3 sm:grid-cols-4 justify-center items-center gap-3  pr-3 pl-3`}
       >
         {!arrayAllProducts.length
-          ? <span className="text-sm font-Morabba-Bold">در این رنج قیمت محصولی پیدا نشد 😕</span>
+          ? <span className="text-sm font-Morabba-Bold">در این رنج محصولی پیدا نشد 😕</span>
           : isRowAndColumns == "row"
           ? allDataProducts.map((item) => (
               <BoxItemsColumns key={item.id} items={item} />
