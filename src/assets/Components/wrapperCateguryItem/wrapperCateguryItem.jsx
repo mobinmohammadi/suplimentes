@@ -1,5 +1,5 @@
 import React from "react";
-import CateguryItme from "../CateguryItme/CateguryItme.jsx";
+import CateguryItme from "../CategoryItem/CategoryItem.jsx";
 import { allCategury } from "../../../Data.js";
 import SectionsTitle from "../SectionsTitle/SectionsTitle.jsx";
 

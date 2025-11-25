@@ -1,4 +1,4 @@
-import TopBarMobile from "../TopBarMobile/TopBarMobile.";
+import TopBarMobile from "../TopBarMobile/TopBarMobile";
 import { useParams } from "react-router-dom";
 import RoadMapSite from "../RoadMapSite/RoadMapSite";
 import OnsPageContent from "./OnsPageContent/OnsPageContent";

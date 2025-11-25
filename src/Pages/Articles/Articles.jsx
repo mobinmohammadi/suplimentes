@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TopBarMobile from "./../../assets/Components/TopBarMobile/TopBarMobile.";
+import TopBarMobile from "@/TopBarMobile/TopBarMobile";
 import "../../App.css";
 // import { articles } from "../../Data";
 

@@ -1,6 +1,5 @@
-import React from "react";
 import SectionsTitle from "../SectionsTitle/SectionsTitle";
-import BrandsItem from "../ForBarndsProducts/BrandsItem/BrandsItem.jsx";
+import BrandsItem from "../ForBarndsProducts/BrandsItem/BrandsItem";
 import { allBrandLogo } from "../../../Data.js";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";

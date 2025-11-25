@@ -1,5 +1,5 @@
 import React from "react";
-import TopBarMobile from "../../TopBarMobile/TopBarMobile.";
+import TopBarMobile from "../../TopBarMobile/TopBarMobile";
 import BradCrumbCart from "../BradCrumbCart/BradCrumbCart";
 import CheckoutProgressBar from "../CheckoutProgressBar/CheckoutProgressBar";
 import MainContent from "./MainContent/MainContent";

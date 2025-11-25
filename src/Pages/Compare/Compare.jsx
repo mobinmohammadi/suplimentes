@@ -1,11 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
-import BradCrumb from "../../assets/Components/CustomElem/BradCrumb/BradCrumb";
-import TopBarMobile from "../../assets/Components/TopBarMobile/TopBarMobile.";
-import Footer from "../../assets/Components/Footer/Footer";
+import  { useContext, useEffect, useState } from "react";
+import BradCrumb from "@Custom/BradCrumb/BradCrumb"
+import TopBarMobile from "@/TopBarMobile/TopBarMobile";
+import Footer from "@/Footer/Footer";
 import { allProducts } from "../../Data";
-import BoxCompare from "../../assets/Components/Compares/BoxCompare/BoxCompare";
-import BoxesForAddCompare from "../../assets/Components/Compares/BoxesForAddCompare/BoxesForAddCompare";
-import TableCompare from "../../assets/Components/Compares/TableCompare/TableCompare";
+import BoxCompare from "@/Compares/BoxCompare/BoxCompare";
+import BoxesForAddCompare from "@/Compares/BoxesForAddCompare/BoxesForAddCompare";
+import TableCompare from "@/Compares/TableCompare/TableCompare";
 import ComparseContext from "../../assets/Context/ComparseContext/ComparseContext";
 
 export default function Compare() {

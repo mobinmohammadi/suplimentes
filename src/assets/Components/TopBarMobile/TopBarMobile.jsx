@@ -6,14 +6,12 @@ import React, {
   useState,
 } from "react";
 
-import { CartContext } from "../../Context/CartContext.jsx";
-import BasketMobile from "./BasketMobile/BasketMobile.jsx";
-import SearchBoxTopBar from "./SearchBoxTopBar/SearchBoxTopBar.jsx";
-import ItemInBasketPc from "../ItemInBasketPc/ItemInBasketPc.jsx";
-import BoxesForUserBaskets from "./BoxesForUserBaskets/BoxesForUserBaskets.jsx";
-import CartBoxDetailsPc from "./CartBoxDetailsPc/CartBoxDetailsPc.jsx";
+import { CartContext } from "../../Context/CartContext";
+import BasketMobile from "./BasketMobile/BasketMobile";
+import SearchBoxTopBar from "./SearchBoxTopBar/SearchBoxTopBar";
+import CartBoxDetailsPc from "./CartBoxDetailsPc/CartBoxDetailsPc";
 import { Link } from "react-router-dom";
-import FooterTopBar from "./FooterTopBar/FooterTopBar.jsx";
+import FooterTopBar from "./FooterTopBar/FooterTopBar";
 export default function TopBarMobile() {
   const { addToCart, cart, allPriceInBasket } = useContext(CartContext);
 

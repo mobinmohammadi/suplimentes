@@ -1,5 +1,4 @@
-import React from "react";
-import MenuMobile from "../../assets/Components/MenuMobile/MenuMobile";
+
 
 export default function EmptyBasket() {
   return (

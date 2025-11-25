@@ -4,7 +4,7 @@ import Home from "./Pages/Home/Home.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import OnsPageProducts from "./assets/Components/OnsPageProducts/OnsPageProducts.jsx";
 import FilterBrands from "./Pages/FilterBrands/FilterBrands.jsx";
-import CategurtByProducts from "./Pages/CategurtByProducts/CategurtByProducts.jsx";
+import CategoryByProducts from "./Pages/CategoryByProducts/CategoryByProducts";
 import { CartProvider } from "./assets/Context/CartContext.jsx";
 import NotFoundPage from "./Pages//NotFoundPage/NotFoundPage.jsx";
 import { ToastContainer } from "react-toastify";
@@ -34,7 +34,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/productsBrand/:BrandName" element={<FilterBrands />} />
           <Route
             path="/categuryByProducts/:categuryProduct"
-            element={<CategurtByProducts />}
+            element={<CategoryByProducts />}
           />
           <Route path="/cart" element={<PurchaseProcessCart />}>
             <Route index element={<TheFirstStepOfTheShoppingCart />} />

@@ -1,8 +1,7 @@
-import React from "react";
-import TopBarMobile from "./../../assets/Components/TopBarMobile/TopBarMobile.";
-import BradCrumb from "../../assets/Components/CustomElem/BradCrumb/BradCrumb";
-import TitleBySections from "../../assets/Components/CustomElem/TitleBySections/TitleBySections";
-import Footer from "../../assets/Components/Footer/Footer";
+import TopBarMobile from "@/TopBarMobile/TopBarMobile";
+import BradCrumb from "@Custom/BradCrumb/BradCrumb"
+import TitleBySections from "@Custom/TitleBySections/TitleBySections";
+import Footer from "@/Footer/Footer";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 

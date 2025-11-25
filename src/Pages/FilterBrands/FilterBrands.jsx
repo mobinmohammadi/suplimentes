@@ -1,7 +1,7 @@
-import React from 'react'
-import TopBarMobile from '../../assets/Components/TopBarMobile/TopBarMobile.'
-import ForBarndsProducts from '../../assets/Components/ForBarndsProducts/ForBarndsProducts'
-import Footer from '../../assets/Components/Footer/Footer'
+
+import TopBarMobile from '@/TopBarMobile/TopBarMobile'
+import ForBarndsProducts from '@/ForBarndsProducts/ForBarndsProducts'
+import Footer from '@/Footer/Footer'
 
 
 export default function FilterBrands() {

@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from "react";
-import TopBarMobile from "../../assets/Components/TopBarMobile/TopBarMobile.";
-import WrapperCateguryItem from "../../assets/Components/wrapperCateguryItem/wrapperCateguryItem";
-import BrandsSupplements from "../../assets/Components/BrandsSupplements/BrandsSupplements";
-import ArticlesSections from "../../assets/Components/ArticlesSections/ArticlesSections";
-import Footer from "../../assets/Components/Footer/Footer";
-import MenuMobile from "../../assets/Components/MenuMobile/MenuMobile";
-import SectionsPreeSellProducts from "../../assets/Components/SectionsPreeSellProducts/SectionsPreeSellProducts";
-import DiscriptionHome from "../../assets/Components/DiscriptionHome/DiscriptionHome";
-import SectionsTitle from "../../assets/Components/SectionsTitle/SectionsTitle";
-import FrequentlyAskedQuestions from "../../assets/Components/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
-import TopHomeSections from "../../assets/Components/TopHomeSections/TopHomeSections";
-import ArticlesSlider from "../../assets/Components/ArticlesSlider/ArticlesSlider";
+import { useEffect, useState } from "react";
+import TopBarMobile from "@/TopBarMobile/TopBarMobile"
+import WrapperCateguryItem from "@/wrapperCateguryItem/wrapperCateguryItem";
+import BrandsSupplements from "@/BrandsSupplements/BrandsSupplements";
+import ArticlesSections from "@/ArticlesSections/ArticlesSections";
+import Footer from "@/Footer/Footer";
+import MenuMobile from "@/MenuMobile/MenuMobile";
+import SectionsPreeSellProducts from "@/SectionsPreeSellProducts/SectionsPreeSellProducts";
+import DiscriptionHome from "@/DiscriptionHome/DiscriptionHome";
+import FrequentlyAskedQuestions from "@/FrequentlyAskedQuestions/FrequentlyAskedQuestions";
+import TopHomeSections from "@/TopHomeSections/TopHomeSections";
+import ArticlesSlider from "@/ArticlesSlider/ArticlesSlider";
+
+
+
+
 export default function Home() {
   useEffect(() => {
     window.scrollTo(0,0)

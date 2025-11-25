@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import FilterCategurtProducts from "./FilterCategurtProducts/FilterCategurtProducts";
-import ContentCategurtProducts from "./ContentCategurtProducts/ContentCategurtProducts";
+import ContentCategurtProducts from "./ContentCategurtProducts/ContentCategoryProducts";
 import RoadMapSite from "../RoadMapSite/RoadMapSite";
-import TopBarMobile from "../TopBarMobile/TopBarMobile.";
 import { useParams } from "react-router-dom";
 import { allProducts } from "../../../Data";
 
