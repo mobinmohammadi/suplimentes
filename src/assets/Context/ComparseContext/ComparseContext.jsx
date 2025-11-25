@@ -6,7 +6,6 @@ import { confirmAlert } from "react-confirm-alert";
 export const ComparseContext = createContext();
 
 export const ProviderComparse = ({ children }) => {
-  const [arrayComparseSelected, setArrayComparseSelected] = useState([]);
   const [arrayComparse, setArrayComparse] = useState([]);
 
   useEffect(() => {

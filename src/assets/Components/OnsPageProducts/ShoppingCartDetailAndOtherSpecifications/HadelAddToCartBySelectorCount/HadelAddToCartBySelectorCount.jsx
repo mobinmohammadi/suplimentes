@@ -5,7 +5,6 @@ export default function HadelAddToCartBySelectorCount({priceProduct ,mainDataAft
   const {setCountProduct} = useContext(CartContext)
     const changeCountProduct = (e) => {
         const priceAfterSelectValue =  e * priceProduct
-        
         setMainDataAfterSelect(priceAfterSelectValue)
         setCountProductSelect(e)
         setCountProduct(e)

@@ -1,4 +1,3 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import Home from "./Pages/Home/Home.jsx";
@@ -11,7 +10,6 @@ import NotFoundPage from "./Pages//NotFoundPage/NotFoundPage.jsx";
 import { ToastContainer } from "react-toastify";
 import PurchaseProcessCart from "./Pages/PurchaseProcessCart/PurchaseProcessCart.jsx";
 import TheSeconedStepOfTheShoppingCart from "./assets/Components/PurchaseProcessCart/TheSeconedStepOfTheShoppingCart/TheSeconedStepOfTheShoppingCart.jsx";
-import Panel from "./Pages/Panel/Panel.jsx";
 import Login from "./Pages/Login/Login.jsx";
 import TheMonyStepOfTheShoppingCart from "./assets/Components/PurchaseProcessCart/TheMonyStepOfTheShoppingCart/TheMonyStepOfTheShoppingCart.jsx";
 import TheFirstStepOfTheShoppingCart from "./assets/Components/PurchaseProcessCart/TheFirstStepOfTheShoppingCart/TheFirstStepOfTheShoppingCart.jsx";
