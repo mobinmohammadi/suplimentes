@@ -13,7 +13,6 @@ export default function ArticlesSlider() {
 
   const autoplayRef = useRef();
 
-  // Autoplay با توقف در تعامل
   useEffect(() => {
     if (!slider) return;
     let timeout;

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import TopBarMobile from "@/TopBarMobile/TopBarMobile"
+import TopBarMobile from "@Mobile/TopBarMobile/TopBarMobile"
 import WrapperCateguryItem from "@/wrapperCateguryItem/wrapperCateguryItem";
 import BrandsSupplements from "@/BrandsSupplements/BrandsSupplements";
 import ArticlesSections from "@/ArticlesSections/ArticlesSections";
 import Footer from "@/Footer/Footer";
-import MenuMobile from "@/MenuMobile/MenuMobile";
+import MenuMobile from "@Mobile/MenuMobile/MenuMobile";
 import SectionsPreeSellProducts from "@/SectionsPreeSellProducts/SectionsPreeSellProducts";
 import DiscriptionHome from "@/DiscriptionHome/DiscriptionHome";
 import FrequentlyAskedQuestions from "@/FrequentlyAskedQuestions/FrequentlyAskedQuestions";

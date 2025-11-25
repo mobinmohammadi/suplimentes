@@ -1,7 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-export default function RoadMapSite({ categury = [],linkCategury, name, titleBreadCrumb }) {
+export default function RoadMapSite({ categury = [] ,linkCategury, name, titleBreadCrumb }) {
   return ( 
     <div className="bg-slate-300 w-[97%] mx-auto pt-2 pb-2 font-Dana font-bold overflow-x-auto rounded-md px-4">
       <div className="flex gap-5 items-center min-w-max scroll-smooth snap-x snap-mandatory">

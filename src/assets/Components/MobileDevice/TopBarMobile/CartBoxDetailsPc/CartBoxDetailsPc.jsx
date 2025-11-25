@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from "react";
 import BoxesForUserBaskets from "../BoxesForUserBaskets/BoxesForUserBaskets";
-import { CartContext } from "../../../Context/CartContext";
+import { CartContext } from "../../../../Context/CartContext";
 import { Link } from "react-router-dom";
 
 export default function CartBoxDetailsPc(props) {

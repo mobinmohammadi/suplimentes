@@ -1,12 +1,11 @@
-import React, {
-  Component,
+import {
   useContext,
   useEffect,
   useRef,
   useState,
 } from "react";
 
-import { CartContext } from "../../Context/CartContext";
+import { CartContext } from "../../../Context/CartContext";
 import BasketMobile from "./BasketMobile/BasketMobile";
 import SearchBoxTopBar from "./SearchBoxTopBar/SearchBoxTopBar";
 import CartBoxDetailsPc from "./CartBoxDetailsPc/CartBoxDetailsPc";

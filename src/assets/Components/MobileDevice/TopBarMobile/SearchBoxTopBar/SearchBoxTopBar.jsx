@@ -3,9 +3,9 @@ import {
   allProducts,
   papularSearchesInwebsite,
   preSellProducts,
-} from "../../../../Data.js";
-import BoxForResultSearches from "../../BoxForResultSearches/BoxForResultSearches.jsx";
-import TopSixSearchInWebsite from "../../TopSixSearchInWebsite/TopSixSearchInWebsite.jsx";
+} from "../../../../../Data.js"
+import BoxForResultSearches from "../../../BoxForResultSearches/BoxForResultSearches.jsx";
+import TopSixSearchInWebsite from "../../../TopSixSearchInWebsite/TopSixSearchInWebsite.jsx";
 
 export default function SearchBoxTopBar({
   setIsShowLayer,

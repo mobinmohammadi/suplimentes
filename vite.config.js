@@ -10,6 +10,7 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src/assets/Components"),
       "@Custom": path.resolve(__dirname, "./src/Utils/CustomElem"),
+      "@Mobile": path.resolve(__dirname, "./src/assets/Components/MobileDevice"),
     },
   },
 });

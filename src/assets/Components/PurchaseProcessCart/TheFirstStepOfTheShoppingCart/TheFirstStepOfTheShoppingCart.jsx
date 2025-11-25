@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
-import TopBarMobile from "../../TopBarMobile/TopBarMobile";
+import  { useContext } from "react";
+import TopBarMobile from "../../MobileDevice/TopBarMobile/TopBarMobile";
 import CheckoutProgressBar from "../CheckoutProgressBar/CheckoutProgressBar";
 import MainBasketCartInUserBasket from "../MainBasketCartInUserBasket/MainBasketCartInUserBasket";
 import { CartContext } from "../../../Context/CartContext";
-import { Link } from "react-router-dom";
 import BoxDetailsBasket from "../../PurchaseProcessCart/BoxDetailsBasket/BoxDetailsBasket";
 import BradCrumbCart from "../BradCrumbCart/BradCrumbCart";
 
@@ -42,7 +41,6 @@ export default function TheFirstStepOfTheShoppingCart() {
               {cart.map((item) => (
                 <MainBasketCartInUserBasket item={item} />
               ))}
-              {/* <MainBasketCartInUserBasket/> */}
             </div>
           </div>
           <BoxDetailsBasket cart={cart} allPriceInBasket={allPriceInBasket} />

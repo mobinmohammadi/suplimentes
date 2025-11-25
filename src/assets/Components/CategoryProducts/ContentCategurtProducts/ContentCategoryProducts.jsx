@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import TopBarCateguryFilter from "./TopBarCateguryFilter/TopBarCateguryFilter";
 import ItemSliderPreeSell from "../../ItemSliderPreeSell/ItemSliderPreeSell";
 import { allProducts } from "../../../../Data";

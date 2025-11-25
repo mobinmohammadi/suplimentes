@@ -1,5 +1,5 @@
 import  { useEffect, useState } from "react";
-import FilterCategurtProducts from "./FilterCategurtProducts/FilterCategurtProducts";
+import FilterCategoryProducts from "./FilterCategoryProducts/FilterCategoryProducts";
 import ContentCategurtProducts from "./ContentCategurtProducts/ContentCategoryProducts";
 import RoadMapSite from "../RoadMapSite/RoadMapSite";
 import { useParams } from "react-router-dom";
@@ -86,7 +86,7 @@ export default function CategurtProducts() {
                   : "opacity-0 invisible"
               } sm:opacity-100 sm:visible sm:static z-10 flex right-2 bg-white sm:bg-slate-100 sm:bg-auto sm:top-auto top-[30%] rounded-sm sm:rounded-none shadow-2xl sm:shadow-none border-slate-300 border-solid sm:border-0 border-2  w-[96%] sm:w-auto`}
             >
-              <FilterCategurtProducts
+              <FilterCategoryProducts
                 setFilterByRange={setFilterByRange}
                 setValueSearchInCateguryPage={setValueSearchInCateguryPage}
                 setIsShowBoxCateguryByMobile={setIsShowBoxCateguryByMobile}

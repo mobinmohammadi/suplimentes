@@ -1,5 +1,5 @@
 
-import TopBarMobile from '@/TopBarMobile/TopBarMobile'
+import TopBarMobile from "@Mobile/TopBarMobile/TopBarMobile"
 import ForBarndsProducts from '@/ForBarndsProducts/ForBarndsProducts'
 import Footer from '@/Footer/Footer'
 
